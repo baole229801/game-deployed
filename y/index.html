@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.1.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.1.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+
+  <script src="./color-size.js"></script>
+  <script src="./sketch.js"></script>
+  <script src="./game.js"></script>
+  <script src="./grid.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>2048game</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="score-container">
+        <p id="score"></p>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div id="game-board"></div>
+    </div>
+    <br>
+    <div class="option">
+      <button value="Refresh Page" onClick="window.location.reload();">Try Again</button>
+    </div>
+    <br>
+    <div class="footer">
+      <h3>How to play: Use your <b>arrow keys</b> to move the tiles. When two tiles with the same number touch,
+        they <b>merge into one!</b></h3>
+    </div>
+  </div>
+
+</body>
+
+</html>
